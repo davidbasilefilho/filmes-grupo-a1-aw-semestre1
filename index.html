@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Filmes favoritos da galera</title>
+  </head>
+  <body class="background">
+    <main>
+      <marquee scrollamount="15" direction="left" class="heading"
+        >Filmes favoritos da galera</marquee
+      >
+
+      <h1 class="subheading">Clique nos botões para ver detalhes</h1>
+
+      <ul>
+        <li>
+          <a
+            target="basile"
+            onclick="toggle('basile')"
+            class="button-primary"
+            href="./basile.html"
+          >
+            David
+          </a>
+        </li>
+        <li>
+          <a
+            target="evelyn"
+            onclick="toggle('evelyn')"
+            class="button-primary"
+            href="./evelyn.html"
+          >
+            Evelyn
+          </a>
+        </li>
+        <li>
+          <a
+            target="filipe"
+            onclick="toggle('filipe')"
+            class="button-primary"
+            href="./filipe.html"
+          >
+            Filipe
+          </a>
+        </li>
+        <li>
+          <a
+            target="giovanni"
+            onclick="toggle('giovanni')"
+            class="button-primary"
+            href="./giovanni.html"
+          >
+            Giovanni Paulo
+          </a>
+        </li>
+        <li>
+          <a
+            target="heloise"
+            onclick="toggle('heloise')"
+            class="button-primary"
+            href="./heloise.html"
+          >
+            Heloíse
+          </a>
+        </li>
+        <li>
+          <a
+            target="matheus"
+            onclick="toggle('matheus')"
+            class="button-primary"
+            href="./matheus.html"
+          >
+            Matheus
+          </a>
+        </li>
+      </ul>
+
+      <div class="iframe-container">
+        <iframe
+          id="basile"
+          name="basile"
+          class="hidden card"
+          src="basile.html"
+        ></iframe>
+        <iframe
+          id="evelyn"
+          name="evelyn"
+          class="hidden card"
+          src="evelyn.html"
+        ></iframe>
+        <iframe
+          id="filipe"
+          name="filipe"
+          class="hidden card"
+          src="filipe.html"
+        ></iframe>
+        <iframe
+          id="giovanni"
+          name="giovanni"
+          class="hidden card"
+          src="giovanni.html"
+        ></iframe>
+        <iframe
+          id="heloise"
+          name="heloise"
+          class="hidden card"
+          src="heloise.html"
+        ></iframe>
+        <iframe
+          id="matheus"
+          name="matheus"
+          class="hidden card"
+          src="matheus.html"
+        ></iframe>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
