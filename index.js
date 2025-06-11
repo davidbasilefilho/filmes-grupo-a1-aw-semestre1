@@ -1,5 +1,8 @@
 const ids = ["basile", "giovanni", "filipe", "heloise", "matheus", "evelyn"];
-const elements = ids.map((id) => document.getElementById(id));
+let elements = ids.map((id) => document.getElementById(id));
+let audio = document.getElementById("background-music");
+audio.volume = 0.02;
+console.log("Audio volume set to", audio.volume);
 
 const toggle = (id) => {
   const element = document.getElementById(id);

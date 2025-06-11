@@ -94,8 +94,14 @@ ol {
   flex-direction: row;
   justify-content: center;
   align-items: end;
-  gap: 4rem;
+  gap: 1rem;
   padding-left: 0;
+}
+
+ol li {
+  list-style: decimal;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 ul li {
@@ -124,12 +130,12 @@ ul li {
 }
 
 img {
-  height: 24rem;
+  height: 32rem;
   border-radius: var(--radius);
 }
 
 .movie-title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.2;
   text-wrap: wrap;
   text-align: center;
