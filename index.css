@@ -51,7 +51,8 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  margin: 2rem 0;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .heading {
@@ -115,7 +116,7 @@ ul li {
 .iframe-container {
   width: 60%;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   overflow: hidden;
   border-radius: var(--radius);
 }
@@ -130,7 +131,9 @@ ul li {
 }
 
 img {
-  height: 32rem;
+  height: 30rem;
+  aspect-ratio: 5 / 7.5;
+  object-fit: cover;
   border-radius: var(--radius);
 }
 
@@ -151,4 +154,69 @@ img {
 
 .text-center {
   text-align: center;
+}
+
+table {
+  width: 38rem;
+  border: 1px solid var(--border);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 1rem auto;
+}
+
+table * {
+  transition: all 0.2s ease;
+}
+
+th,
+td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.7rem 0.75rem;
+}
+
+thead {
+  background-color: var(--card);
+  color: var(--card-foreground);
+  font-weight: 700;
+}
+
+tfoot {
+  background-color: var(--card);
+  color: var(--card-foreground);
+}
+
+th:hover {
+  background-color: var(--muted);
+}
+
+td:hover {
+  background-color: var(--muted);
+}
+
+table th:not(:last-child),
+table td:not(:last-child) {
+  border-right: 1px solid var(--border) !important;
+}
+
+table > thead > tr:not(:last-child) > th,
+table > thead > tr:not(:last-child) > td,
+table > tbody > tr:not(:last-child) > th,
+table > tbody > tr:not(:last-child) > td,
+table > tfoot > tr:not(:last-child) > th,
+table > tfoot > tr:not(:last-child) > td,
+table > tr:not(:last-child) > td,
+table > tr:not(:last-child) > th,
+table > thead:not(:last-child),
+table > tbody:not(:last-child),
+table > tfoot:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+
+#background-music {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
 }
